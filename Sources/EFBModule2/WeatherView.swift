@@ -9,7 +9,9 @@ import SwiftUI
 
 struct WeatherView: View {
     var body: some View {
-        Text("Weather View")
+      Image("weather")
+        .resizable()
+        .scaledToFit()
     }
 }
 
