@@ -7,16 +7,19 @@
 
 import SwiftUI
 
-struct WeatherView: View {
-    var body: some View {
-      Image("weather")
-        .resizable()
-        .scaledToFit()
-    }
+public struct WeatherView: View {
+
+  public init() { }
+
+  public var body: some View {
+    Image("weather")
+      .resizable()
+      .scaledToFit()
+  }
 }
 
 struct WeatherView_Previews: PreviewProvider {
-    static var previews: some View {
-      WeatherView()
-    }
+  static var previews: some View {
+    WeatherView()
+  }
 }
