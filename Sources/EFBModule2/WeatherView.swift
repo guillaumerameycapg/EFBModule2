@@ -16,6 +16,7 @@ public struct WeatherView: View {
       Image(packageResource: "weather", ofType: "png")
         .resizable()
         .scaledToFit()
+        .edgesIgnoringSafeArea(.bottom)
     }
     .navigationTitle("Weather")
     .navigationBarTitleDisplayMode(.inline)
@@ -24,6 +25,8 @@ public struct WeatherView: View {
 
 struct WeatherView_Previews: PreviewProvider {
   static var previews: some View {
-    WeatherView()
+    NavigationView {
+      WeatherView()
+    }
   }
 }
