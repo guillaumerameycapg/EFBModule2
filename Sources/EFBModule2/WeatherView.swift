@@ -18,6 +18,7 @@ public struct WeatherView: View {
         .scaledToFit()
     }
     .navigationTitle("Weather")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
