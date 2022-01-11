@@ -12,9 +12,12 @@ public struct WeatherView: View {
   public init() { }
 
   public var body: some View {
-    Image("weather")
-      .resizable()
-      .scaledToFit()
+    HStack {
+      Image(packageResource: "weather", ofType: "png")
+        .resizable()
+        .scaledToFit()
+    }
+    .navigationTitle("Weather")
   }
 }
 
