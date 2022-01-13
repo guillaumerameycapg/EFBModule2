@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "EFBToolKit",
+        "repositoryURL": "https://github.com/guillaumerameycapg/EFBToolKit",
+        "state": {
+          "branch": "main",
+          "revision": "13dc10ae220503f03502379b955d8fb811dd220e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
