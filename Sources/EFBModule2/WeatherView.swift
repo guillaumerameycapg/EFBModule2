@@ -13,20 +13,27 @@ public struct WeatherView: View {
 
   public var body: some View {
     HStack {
-      Image(packageResource: "weather", ofType: "png")
+      Image(packageResource: "weather", ofType: "jpeg")
         .resizable()
-        .scaledToFit()
-        .edgesIgnoringSafeArea(.bottom)
+        .scaledToFill()
+        .edgesIgnoringSafeArea(.leading)
+        .edgesIgnoringSafeArea(.trailing)
+        .edgesIgnoringSafeArea(.top)
     }
-    .navigationTitle("Weather")
-    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
 struct WeatherView_Previews: PreviewProvider {
   static var previews: some View {
-    NavigationView {
+    TabView {
       WeatherView()
+        .tabItem {
+          HStack {
+            Image(systemName: "thermometer.sun")
+            Text("Weather")
+          }
+        }
     }
+    .previewInterfaceOrientation(.portraitUpsideDown)
   }
 }
